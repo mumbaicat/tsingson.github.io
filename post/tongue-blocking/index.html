@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="http://tsingson.github.io/">
+    
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+
+    <title>
+      
+      
+         Tongue Block 舌堵法练习指南 
+      
+    </title>
+    <link rel="canonical" href="http://tsingson.github.io/post/tongue-blocking/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height:160%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:center;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+</style>
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">小罗号口琴音乐</a></h1>
+      <ul>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> Tongue Block 舌堵法练习指南 </h1>
+
+  <div id=sub-header>
+    January 2017 · 2 minute read
+  </div>
+
+  <div class="entry-content">
+    <p>Tongue Block 舌堵法, 在复音口琴中也叫新式单音吹奏法, 在口琴演奏中能作出丰富的音色与声效变化.
+</p>
+
+<p><strong>保留所有版权, 关闭所有形式转载</strong></p>
+
+<h2 id="1-常见的两种口琴演奏法-嘴型">1. 常见的两种口琴演奏法(嘴型)</h2>
+
+<ul>
+<li>口含法 pucker</li>
+<li>舌堵法 tongue blocking
+口含法 pucker up ( 撅嘴唇演奏法)，95％初学口琴的朋友采用口含法演奏口琴。这是很自然的一种方法。如下图(正面示意图）</li>
+</ul>
+
+<h2 id="2-tongue-block-的典型技术动作-定义">2. Tongue Block 的典型技术动作(定义)</h2>
+
+<p>口琴的演奏,一般来说, 是通过音孔进行气息吹/吸产生的气流驱动口琴内的单端固定的簧片振动从而发出声音. 10孔口琴与半音阶口琴是同一时间内对一个音孔进行吹/吸的气息驱动可以发出一个音符.同理, 对口琴的两个或两个以上音孔进行吹/吸气流驱动,同一时间能发出两个或两个以上声音.</p>
+
+<p>具体来说, 口琴的吹奏有以下几种情况:</p>
+
+<p>单孔单音. 比如口琴在演奏旋律时,是按乐谱的旋律主线依次顺序吹奏每一个音符对应的音孔, 按指定的节拍/节奏顺序依次发出指定音符对应的声音,从而构成旋律.
+伴奏及和声演奏时, 会同时对两个以上音孔进行吹/吸动作来同时发出两个以上的音符. 比如C调口琴同时吹响 4 / 5 / 6 孔得到一个 C和弦
+相邻双孔演奏, 在十孔口琴一般是三度音( C调十孔口琴吹响4孔/5孔)
+不相邻的两个孔进行同时吹/吸动作来发出两个音符, 比如五度音( C调十孔口琴吹响4孔/6孔,5孔不发声),八度音(C调十孔口琴吹响4孔/7孔, 5孔/6孔不发声).
+持续吹奏一个旋律音过程中, 间断性演奏一个和弦音. 例如在持续吹响C调十孔口琴的7孔(高音C ), 同时快速断奏4/5/6孔( 中音区的C / E / G 即C和弦)形成节奏型的和弦伴奏
+类似花舌的其他演奏效果.</p>
+
+<p>以上情况中 1/2/3 可能用口含法通过改变大小嘴来实现, 但在 4/5/6 情况下, Tongue Block 舌堵法能给这样的演奏带来最大的便利.</p>
+
+<p>Tongue Block 舌堵法, 典型的技术动作, 就是口含口琴上连续的四个音孔,用舌头堵住左边或右边的三个音孔,让剩余的一个单孔通过吹/吸动作而发出声音的一种方法.(注:某些情况下, 含三孔而堵住其中两个孔,也是舌堵法, 一种变型)</p>
+
+<p>舌堵法通过含4个孔甚至是多于4个孔,舌头或者不堵音孔,或者堵住4个或多个音孔中的一个或多个,通过舌头动作能实现同一时间内一个音符或多个音符同时发出声音,从而带来丰富的音乐表现力.</p>
+
+<p>例如复音口琴常见的模仿手风琴节奏伴奏法(上面谈到的 5持续吹奏一个旋律音过程中, 间断性演奏一个和弦音)</p>
+
+<p>常见舌堵法变化口型:</p>
+
+<ol>
+<li><p>单音：嘴张开到可以含四个孔的大小，用舌头堵住最左边三个孔，留最右孔。</p></li>
+
+<li><p>常用多音：</p></li>
+
+<li><p>(三度音), 口含四孔堵左两孔，口含四孔堵右两孔</p></li>
+
+<li><p>(五度音), 口含三孔堵中间一孔</p></li>
+
+<li><p>(八度音), 口含四孔堵中间两孔</p></li>
+
+<li><p>(十度音), 口含五孔堵中间三孔（这个比较特别的是可以让你吹出像六角手风琴一样的音色）</p></li>
+
+<li><p>(三音三和弦),口含三孔不堵 ( 限于十孔蓝调口琴,及和弦复音口琴)</p></li>
+
+<li><p>(四音三和弦),口含四孔不堵( 限于十孔蓝调口琴, 及和弦复音口琴)</p></li>
+</ol>
+
+<h2 id="3-舌堵法的优点及练习困难">3. 舌堵法的优点及练习困难</h2>
+
+<p>舌堵法的优点如下:</p>
+
+<p>易于保持单音演奏过程中的稳定性, 舌堵法口型相对口含法来说,双侧嘴角比较放松( 含3孔或4孔大嘴), 舌头尖有固定的放置位置从而口腔内部空间相对稳定( 舌头的任意变化都可能影响音色甚至是音高)
+易于保持使用胸腹式呼吸来进行演奏. 相比口含法, 不那么方便用口腔周边肌肉变化来控制音色/音高/音量了.
+相比大小嘴, 更容易作5度/8度/和弦伴奏/分解和弦/花舌/吐音&hellip;.等技巧.
+舌堵法的练习难点如下:</p>
+
+<p>口水多!口水多!口水多!
+舌头控制不了!!舌头控制不了!!</p>
+
+<h2 id="4-舌堵法的渐进式练习方法">4. 舌堵法的渐进式练习方法</h2>
+
+<p>针对很多朋友学习舌堵法的难点, 我们分拆了渐进式练习方法. 该方法已经在教学中验证轻松有效.</p>
+
+<p>舌堵法需要分阶段练习, 可分为以下4个阶段:</p>
+
+<ol>
+<li><p>同时含3或4个相邻音孔吹吸练习. 要求把口腔内部空间打开,将嘴唇打开含口琴的连续相邻3或 4 个音孔,并能用吹/吸运作吹响相邻 4个孔的正常吹气音/正常吸气音.</p></li>
+
+<li><p>含3个孔堵中间孔练习5度音.要求把口腔内部空间打开,将嘴唇打开含口琴的连续相邻 3个孔 ,用舌头尖部(大概)轻堵中间音孔( 轻轻堵住孔不能发出声音就可以了),并能用吹/吸运作吹响嘴唇两角相近音孔正常吹气音/正常吸气音</p></li>
+
+<li><p>含4个孔堵中间2个孔练习, 吹奏8度音,吹响嘴唇两角相近音孔正常吹气音/正常吸气音</p></li>
+
+<li><p>含4个孔堵(左或右)侧边2个孔练习</p></li>
+</ol>
+
+<p>注: 以上练习过程中, 需要有意让舌头轻触口琴音孔(阻止被堵音孔发出声音)或是离开口琴音孔</p>
+
+<p>#＃ 5. 增补一：舌堵演奏的辅助技巧</p>
+
+<p>舌堵法相对口含法，有一个便利快捷的技巧：协助口琴演奏中的气息交换从而避免气喘胸闷头晕。如下图</p>
+
+<h2 id="6-增补二-舌堵法的压音技巧">6. 增补二: 舌堵法的压音技巧</h2>
+
+<p>( 撰写中&hellip;..)</p>
+
+<p>注1: 本文初稿写于2016年5月, at 深圳南山</p>
+
+<p>注2: 题图为我在2016年5月创立小罗号口琴音乐中心时, 标志设计草图</p>
+
+<p>注2: 保留所有版权, 关闭所有形式转载</p>
+
+<p>「真诚赞赏，手留余香」
+还没有人赞赏。
+你可以分享文章，让文章被更多人看到。
+布鲁斯口琴
+口琴
+口琴教学
+23
+天下一老五郎
+白露为霜
+gargoyle
+pro.66
+学习游泳的鱼
+分享
+编辑</p>
+
+<p>文章被以下专栏收录</p>
+
+<p>口琴音乐夜话
+分享口琴学习/即兴演奏相关的&rdquo;最佳实践&rdquo;
+进入专栏
+2 条评论
+TsingsonQin
+写下你的评论</p>
+
+<p>连洛以
+连洛以
+请问有什么练习的曲目吗
+1 个月前
+TsingsonQin
+ 查看对话
+TsingsonQin（作者）回复连洛以
+确是有一些, 稍后找个方式分享(音频) 或放上谱子.
+1 个月前
+推荐阅读
+题图
+初学十孔口琴索引 cookbook
+初学十孔口琴及进阶口琴手的痛点指导文章, 一起来噜琴吧## 1. 什么是 cookbook多年以前, 个人还算是半个&rdquo;程序猿&rdquo; / &ldquo;解决方案工程师&rdquo; / &ldquo;系统架构师…查看全文
+TsingsonQin1 个月前
+发表于 口琴音乐夜话
+题图
+十孔口琴快速吹奏技巧(1):横指触唇持琴法
+[口琴入门] 十孔口琴的持琴与移孔练习技巧,又称音阶练习指南保留所有版权, 关闭所有形式转载## 0. 背景简述原问题在这：布鲁斯口琴吹奏移孔的技巧？…查看全文
+TsingsonQin1 个月前
+发表于 口琴音乐夜话
+题图
+李宗伟为什么会滑倒？
+说李宗伟惯了流年不利，命途多舛，诸位当无异议。征战多年，总有厄运瞅准机会就使绊，奋勇再起与悲情回落同在，不消多说。 新年前后，关于李宗伟的…查看全文
+腾宇20 天前编辑精选
+题图
+和拖延症做朋友~
+想知道如何克服拖延症，来听小红拖拉机的Live&ndash;「你的新年计划为啥总落空？」作为拖延症资深患者，小红……拖……拉……机……拖拖拉拉，久病成医，…查看全文
+小红拖拉机4 个月前编辑精选
+发表于 HR小白进化论</p>
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="http://tsingson.github.io/post/about/">&laquo; 关于小罗号口琴音乐</a>
+    
+    
+      <a class="basic-alignment left" href="http://tsingson.github.io/post/pucker-up/">十孔口琴单音pucker口含法的说明 &raquo;</a>
+    
+  </div>
+</section>
+
+  
+</body>
+</html>
+
+
+
