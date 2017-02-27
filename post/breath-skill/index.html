@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <base href="http://tsingson.github.io/">
+    
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+
+    <title>
+      
+      
+         口琴吹奏喘不过气的不完全解决(修订中) 
+      
+    </title>
+    <link rel="canonical" href="http://tsingson.github.io/post/breath-skill/">
+
+    <style>
+  * {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    color: black;
+  }
+
+  body {
+    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-size:17px;
+    line-height: 200%;
+    color:#1d1313;
+    max-width:700px;
+    margin:auto;
+  }
+
+  p {
+    margin: 5px 0 10px 0;
+    line-height: 250%;
+  }
+
+  a img {
+    border:none;
+  }
+
+  img {
+    margin: 10px auto 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  pre, code {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+  }
+
+  code {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 200%;
+  }
+
+  pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+  }
+
+  pre code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  pre code::before,
+  pre code::after {
+    content: normal;
+  }
+
+  em,q,em,dfn {
+    font-style:italic;
+  }
+
+  .sans,html .gist .gist-file .gist-meta {
+    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+  }
+
+  .mono,pre,code,tt,p code,li code {
+    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .heading,.serif,h1,h2,h3 {
+    font-family:"Old Standard TT",serif;
+  }
+
+  strong {
+    font-weight:600;
+  }
+
+  q:before {
+    content:"\201C";
+  }
+
+  q:after {
+    content:"\201D";
+  }
+
+  del,s {
+    text-decoration:line-through;
+  }
+
+  blockquote {
+    font-family:"Old Standard TT",serif;
+    text-align:left;
+    padding:50px;
+  }
+
+  blockquote p {
+    display:inline-block;
+    font-style:italic;
+  }
+
+  blockquote:before,blockquote:after {
+    font-family:"Old Standard TT",serif;
+    content:'\201C';
+    font-size:35px;
+    color:#403c3b;
+  }
+
+  blockquote:after {
+    content:'\201D';
+  }
+
+  hr {
+    width:40%;
+    height: 1px;
+    background:#403c3b;
+    margin: 25px auto;
+  }
+
+  h1 {
+    font-size:35px;
+  }
+
+  h2 {
+    font-size:28px;
+  }
+
+  h3 {
+    font-size:22px;
+    margin-top:18px;
+  }
+
+  h1 a,h2 a,h3 a {
+    text-decoration:none;
+  }
+
+  h1,h2 {
+    margin-top:28px;
+  }
+
+  #sub-header, time {
+    color:#403c3b;
+    font-size:13px;
+  }
+
+  #sub-header {
+    margin: 0 4px;
+  }
+
+  #nav h1 a {
+    font-size:35px;
+    color:#1d1313;
+    line-height:120%;
+  }
+
+  .posts_listing a,#nav a {
+    text-decoration: none;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ul li {
+    margin-left: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+  ul li:before {
+    content:"\00BB \0020";
+  }
+
+  #nav ul li:before, .posts_listing li:before {
+    content:'';
+    margin-right:0;
+  }
+
+  #content {
+    text-align:left;
+    width:100%;
+    font-size:15px;
+    padding:60px 0 80px;
+  }
+
+  #content h1,#content h2 {
+    margin-bottom:5px;
+  }
+
+  #content h2 {
+    font-size:25px;
+  }
+
+  #content .entry-content {
+    margin-top:15px;
+  }
+
+  #content time {
+    margin-left:3px;
+  }
+
+  #content h1 {
+    font-size:30px;
+  }
+
+  .highlight {
+    margin: 10px 0;
+  }
+
+  .posts_listing {
+    margin:0 0 50px;
+  }
+
+  .posts_listing li {
+    margin:0 0 25px 15px;
+  }
+
+  .posts_listing li a:hover,#nav a:hover {
+    text-decoration: underline;
+  }
+
+  #nav {
+    text-align:center;
+    position:static;
+    margin-top:60px;
+  }
+
+  #nav ul {
+    display: table;
+    margin: 8px auto 0 auto;
+  }
+
+  #nav li {
+    list-style-type:none;
+    display:table-cell;
+    font-size:15px;
+    padding: 0 20px;
+  }
+
+  #links {
+    margin: 50px 0 0 0;
+  }
+
+  #links :nth-child(2) {
+    float:right;
+  }
+
+  #not-found {
+    text-align: center;
+  }
+
+  #not-found a {
+    font-family:"Old Standard TT",serif;
+    font-size: 200px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 225px;
+  }
+
+  @media (max-width: 750px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:28px;
+    }
+
+    #nav li {
+      font-size:13px;
+      padding: 0 15px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:50px;
+      font-size:14px;
+    }
+
+    #content h1 {
+      font-size:25px;
+    }
+
+    #content h2 {
+      font-size:22px;
+    }
+
+    .posts_listing li div {
+      font-size:12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      padding-left:20px;
+      padding-right:20px;
+    }
+
+    #nav h1 a {
+      font-size:22px;
+    }
+
+    #nav li {
+      font-size:12px;
+      padding: 0 10px;
+    }
+
+    #content {
+      margin-top:0;
+      padding-top:20px;
+      font-size:12px;
+    }
+
+    #content h1 {
+      font-size:20px;
+    }
+
+    #content h2 {
+      font-size:18px;
+    }
+
+    .posts_listing li div{
+      font-size:12px;
+    }
+  }
+</style>
+
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    
+  </head>
+
+  <body>
+    <section id=nav>
+      <h1><a href="/">TsingsonQin&#39;s Note</a></h1>
+      <ul>
+        
+      </ul>
+    </section>
+
+
+<section id=content>
+  <h1> 口琴吹奏喘不过气的不完全解决(修订中) </h1>
+
+  <div id=sub-header>
+    February 2017 · 2 minute read
+  </div>
+
+  <div class="entry-content">
+    <blockquote>
+<p>口琴演奏, 在长音连吹或者长音连续吸的时候, 气息满了或者气息不够用, 就感觉喘不过来,胸闷,(缺氧)头晕. 本文给出不完全解决方法
+ &lt;!–more–&gt;
+ <em>TsingsonQin原创文章, 保留所有版权, 关闭所有形式转载</em></p>
+</blockquote>
+
+<p>## 0. 问题现象</p>
+
+<p>口琴吹奏一段乐句或吹奏一个曲目( 3分钟左右), 吹吸过程中慢慢的感觉喘不过气来.</p>
+
+<p>具体来说, 像这样, 长音连吹或者长音连续吸的时候, 气息满了或者气息不够用, 就感觉喘不过来,胸闷,(缺氧)头晕. 这样的情况持续之后, 甚至吹气音与吸气音交替进行的乐句, 都进行得不连贯甚至感觉难以持续进行下去.</p>
+
+<p>## 1. 问题现象解读</p>
+
+<p>口琴吹奏过程中, 在乐句与乐句之间, 在乐句中的一串音符中间, 在两次换气之间, 持续吸进气量与持续吹出气量不对等, 在接下来的换气依然达不到平稳转换, 持续恶化后, 变成了喘不过气来</p>
+
+<p>## 2.预先说明</p>
+
+<p>胸腹式呼吸并不能完全解决&rdquo;口琴吹奏(时间稍长)喘不过气来&rdquo;的问题, 只算是部分改善
+ 口琴的型号, 以及口琴的质量, 也类似上一条, 簧片灵敏度, 口琴是否费气, 与&rdquo;喘不过气&rdquo;没有直接关联. 遇上变态的乐句, 再省气的口琴, 处理不好换气平衡, 一样喘不过来.
+ 吹奏时, 口琴的音色或者共鸣什么的, 气流控制得精细, 也与&rdquo;喘不过气来&rdquo; 没有直接关系</p>
+
+<p>## 3. 解决方法分析</p>
+
+<ol>
+<li><p>口琴是吹/吸结合进行演奏的乐器, 口琴演奏与歌唱(换气)/弹钢琴(提手) 一样, 需要对乐句进行断句, 确定换气(应该说是大换气)的位置, 也就是说, 在乐句与乐句之间, 甚至在乐句中的一串音符中间, 需要有一个明确的换气位置</p></li>
+
+<li><p>吹与吸相互转的气息量平衡就是一个动态转换过程, 而断乐句进行的大换气,是让口琴不发出声音的一个调整过程( 这个调整可能因为乐句的需要, 约束在非常非常短的时间段内完成调整)</p></li>
+</ol>
+
+<p>## 4. 解决建议
+ 1. 预先对曲目进行分析, 作好乐句拆分, 尤其在不影响音乐连续性与音乐表现力情况下, 对乐段进行拆分为小的乐句, 使得小乐句之间有可以进行换气调整的位置. &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-处理好明确(大)换气的位置</p>
+
+<p>( 这里加乐谱图片)</p>
+
+<ol>
+<li>处理好小乐句吹奏过程中的吹/吸的气量平衡, 也就是, 在一个连续的乐句演奏过程中, 有意识的预先处理好进气总量与吹气总量.</li>
+</ol>
+
+<p>(这里加呼与吸的气量动态变化示意图)</p>
+
+<p>例如:在多个连续吹气音之前作好预吸气动作, 吸出的气量刚好足够这些多个吹气音所需. 反之, 对多个连续吸气音之前作预吐气动作.</p>
+
+<ol>
+<li>有帮助的呼吸练习 ( 待修订)</li>
+</ol>
+
+<p>长吸气练习
+ 呼气与吸气的快速转换
+ 两种换气技巧与偷气技巧</p>
+
+<p>补充材料:</p>
+
+<blockquote>
+<p>以下的英文来自于quora.com ， 中文部分是我意译(及个人见解)
+* Should I have strong breath to play harmonica?
+ 我需要很强的气息来演奏口琴吗？
+ No, you have not. Harmonica player breath should not be strong, it should be careful and accurate, you should blow through harmonica, not into it.
+ 不，你不需要！ 口琴演奏者的气息（呼吸）不必要强有力，而应该是谨慎而精确的（运用气息）。 你的气息应该是吹（吸）经过口琴，而不是（把气息）吹进去。</p>
+
+<ul>
+<li>If you blow or draw with pressure your gonna wreck the reedplates ( I messed up a lot of them when I started).
+如果你的吹、吸带着压力（气流带有压力，意思是过于用力去吸或吹），你可能损伤口琴的簧片。 （ 我刚开始学口琴就搞得很糟）</li>
+<li>I got an test for you to try so you know your are breathing right.
+我推荐给你一个测试方法，让你知道你的呼吸是否是正确(的腹式呼吸)</li>
+<li>When you Breath without the harmonica you should feel relaxed. That means that your shoulders are staying in the same place. If they are moving up and down, you are not.breathing from your belly and thats not right.
+当你不持口琴时所进行的呼吸，是非常放松的。 这就是说，放松的呼吸，具体来说是你的双肩保持在原位不动。 如果你的双肩是上下移动，那就说明你不是进行腹式呼吸，这是不对的。（TsingsonQin:这一段描述对腹式呼吸判断是很准确有效的. 只是, 资深蓝调口琴手在吹奏时很多用的是胸腹式复合呼吸法, 以获得更绵长有效的气息驱动口琴作出种种音色与声效）</li>
+<li>Train your self to play loud but dont breath to hard.
+训练你自己，大声演奏口琴，而不是很用力的呼吸（TsingsonQin: 对口琴的吹/吸, 应该是控制音量大小, 这与吹或吸的气流力度并不成正比）</li>
+</ul>
+</blockquote>
+
+<p>### 修订记录:</p>
+
+<ul>
+<li>2017/02/26 首次修订</li>
+</ul>
+
+  </div>
+
+  <div id=links>
+    
+    
+  </div>
+</section>
+
+  </div>
+</body>
+</html>
+
+
+
